@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+
+
+<script> 
+var i = 0; //start index
+    var images = [];
+    var time = 300;
+
+    //array of image src
+    images[0] = 'https://i.ibb.co/pLH2gK1/sneaker0.jpg';
+    images[1] = 'https://i.ibb.co/ZJKNVdd/sneaker9.jpg';
+    images[2] = 'https://i.ibb.co/pvkGV41/sneaker8.jpg';
+    images[3] = 'https://i.ibb.co/FsSb2xT/sneaker7.jpg';
+    images[4] = 'https://i.ibb.co/s6DJYpr/sneaker6.jpg';
+    images[5] = 'https://i.ibb.co/9V55FM9/sneaker5.jpg';
+    images[6] = 'https://i.ibb.co/7bV3jY0/sneaker4.jpg';
+    images[7] = 'https://i.ibb.co/5GCbCpt/sneaker3.jpg';
+    images[8] = 'https://i.ibb.co/G7gKpts/sneaker2.jpg';
+
+
+    //change image
+    function changeImage(){
+        document.imgSlide.src = images[i];
+        if(i < images.length-1){
+            i++;
+        }
+        else{
+            i = 0;
+        }
+        setTimeout("changeImage()", time);
+    }
+
+
+    window.onload = changeImage(); 
+</script> 
+
+
+<body>
+    <!--Image Slides Start-->
+    <img name = "imgSlide" style="width: 500px;">
+</body>
+
+
+
+</html>

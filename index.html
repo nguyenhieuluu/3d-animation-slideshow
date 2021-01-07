@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport"
+    content="width=device-width, 
+    initial-scale=1.0"/>
+    <title> 3D Animation </title>
+    <link rel="stylesheet" href="style.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</head>
+
+<script> 
+    $(function(){
+        $('.slider-container').load('slider.html');
+    });
+</script>
+
+
+<script> 
+    $(function(){
+        $('.slideshow-container').load('slideshow.html');
+    });
+</script>
+
+<body>
+
+    <h3 style="margin-top: 30px;">&#127758 You'll be the Earth, and I'll be the Moonie &#127769</h3>
+    <h3>&#128433 Move your mouse, and let me rotate around you honey &#128158	</h3>
+    <div class="container" style="width:100%">
+        
+        <div class="card">
+
+            <div class="sneaker">
+                <div class="circle"></div>
+                <img src="https://i.ibb.co/9WM5kDM/shoe-removebg.png" alt="nikeshoe">
+            </div>
+
+
+            <div class="info">
+                <h1 class="title"> Warrior </h1>
+                <h3> The Road Warrior scavenges innovation from many different places: basketball, training, running, outdoor apparel to provide comfort, protection, and durability. </h3>
+                <div class="sizes">
+                    <button> 6 </button>
+                    <button> 7 </button>
+                    <button> 8 </button>
+                    <button class="active"> 9 </button>
+                    <button> 10 </button>
+                </div>
+                <div class="purchase">
+                    <p id="display-message"></p>
+                    <button onclick="printMessage()"> PURCHASE </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+
+
+    <div class="container-2">
+        <h3 style="margin-top: 30px;"> 	&#11013 Swipe to the left or swipe to the right &#10145</h3>
+        <h3>	&#127881 No matter what you did, I just want to be in your eyes &#128525	</h3>
+        <div class="slider-container"> </div>
+    </div>
+ 
+    <div class="container-3">
+        <h3 style="margin-top: 30px;"> 	&#11013 Swipe to the left or swipe to the right &#10145</h3>
+        <h3>	&#127881 No matter what you did, I just want to be in your eyes &#128525	</h3>
+        <div class="slideshow-container"> </div>
+    </div>
+
+
+
+
+
+</body>
+
+
+
+
+
+
+
+
+
+</html>
+

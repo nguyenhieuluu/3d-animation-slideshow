@@ -1,0 +1,204 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+body {
+    font-family: "Poppins", sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    perspective: 1000px;
+    background: linear-gradient(
+      to right,
+      rgba(241, 243, 108, 0.753),
+      rgba(72, 224, 80, 0.459)
+    );
+}
+
+.container {
+    margin: 30px;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.card {
+    background-color: white;
+    transform-style: preserve-3d;
+    min-height: 80vh;
+    width: 35rem;
+    border-radius: 30px;
+    padding: 0rem 5rem;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
+}
+  
+.sneaker {
+    top: 25px;
+    min-height: 35vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sneaker img {
+    width: 20rem;
+    z-index: 2;
+    transition: all 0.75s ease-out;
+}
+
+.circle {
+    top: 5%;
+    width: 15rem;
+    height: 15rem;
+    background: linear-gradient(
+      to right,
+      rgba(151, 219, 166, 0.897),
+      rgba(241, 243, 108, 0.753)
+    );
+    position: absolute;
+    border-radius: 50%;
+    z-index: 1;
+}
+  
+.info h1 {
+    transition: all 0.75s ease-out;
+}
+
+.info h3 {
+    padding: 2rem 0rem;
+    color: #585858;
+    font-weight: lighter;
+    transition: all 0.75s ease-out;
+}
+
+.sizes {
+    display: flex;
+    justify-content: space-between;
+    transition: all 0.75s ease-out;
+}
+
+.sizes button {
+    padding: 0.5rem 1.5rem;
+    margin: 0rem 1rem;
+    background: none;
+    border: none;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.sizes button:hover, .purchase button:hover {
+    color: white;
+    background: rgba(27, 97, 36, 0.644);  
+}
+
+button.active {
+    background: rgba(140, 240, 9, 0.418); 
+}
+
+.purchase {
+    margin-top: 5rem;
+    transition: all 0.75s ease-out;
+}
+
+.purchase button {
+    width: 100%;
+    padding: 1rem 0rem;
+    background: rgba(155, 228, 19, 0.418);
+    border: none;
+    cursor: pointer;
+    border-radius: 30px;
+    font-weight: bolder;
+    margin-bottom: 20px;
+
+}
+
+
+#display-message{
+    margin: -50px 0px 10px 0px;
+    text-align: center;
+    color: red;
+
+}
+
+
+
+.container-2{
+    background-color: white;
+    width: 100%;
+    padding: 10px 0px;
+    text-align: center;
+
+}
+
+
+.slider{
+    display: flex;
+	height: 350px;
+	max-height: auto;
+	overflow-y: hidden;
+    overflow-x: scroll !important;
+    padding: 25px;
+    scroll-behavior: smooth;
+
+}
+
+.slider::-webkit-scrollbar {
+    height: 5px;
+    width: 150px;
+    display: none;
+}
+.slider::-webkit-scrollbar-track {
+    background: transparent;
+}
+.slider::-webkit-scrollbar-thumb {
+    background: #888;
+}
+.slider::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+.slider img:hover {
+    transform: scale(1.05);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.329);
+}
+
+
+.slide {
+    position: relative;
+}
+
+
+.slide img {
+    height: 100%;
+    width: 300px;
+    margin: 0 10px;
+    object-fit: cover;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: .25s ease-in-out;
+}
+
+.container-3{
+    width: 100%;
+    padding: 10px 0px;
+    text-align: center;
+
+
+background: linear-gradient(
+    to right,
+    rgba(248, 86, 148, 0.562),
+    rgba(229, 132, 238, 0.384)
+  );
+
+}
+
+.slideshow-container{
+    margin: 30px;
+}
